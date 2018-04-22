@@ -17,23 +17,29 @@ INSERT INTO task (task_id, task_label)
   VALUES (7,"Go grocery shopping");
 
 
-INSERT INTO curr_task (curr_task_id, due_date, task_id, status)
-  VALUES (001, '1985-01-04', 1, 'completed');
+INSERT INTO curr_task (curr_task_id, date_created, due_date, task_id, status)
+  VALUES (001,'1985-01-01', '1985-01-04', 1, 'completed');
 
 INSERT INTO curr_task (curr_task_id, due_date, task_id, status)
-  VALUES (002, '1959-04-03', 4,'overdue');
+  VALUES (002, '1959-02-03', '1959-04-03', 4,'overdue');
 
 INSERT INTO curr_task (curr_task_id, due_date, task_id, status)
-  VALUES (003, '1985-04-04', 3, 'completed');
+  VALUES (003, '1985-01-04', '1985-04-04', 3, 'completed');
 
 INSERT INTO curr_task (curr_task_id, due_date, task_id, status)
-  VALUES (004, '1954-06-06', 6,'overdue');
+  VALUES (004, '1954-03-20', '1954-06-06', 6,'overdue');
 
 INSERT INTO curr_task (curr_task_id, due_date, task_id, status)
-  VALUES (005, '1989-01-04', 1, 'completed');
+  VALUES (005, '1988-06-06', '1989-01-04', 1, 'completed');
 
-INSERT INTO curr_task (due_date, task_id, status)
-  VALUES ('1957-04-03', 7,'overdue');
+INSERT INTO curr_task (date_created, ue_date, task_id, status)
+  VALUES ('1954-06-06', '1957-04-03', 7,'overdue');
+
+INSERT INTO curr_task (date_created, ue_date, task_id, status)
+  VALUES ('2018-06-04', '2018-07-04', 2, 'active');
+
+INSERT INTO curr_task (date_created, due_date, task_id, status)
+  VALUES ('2018-07-04', '2018-09-04', 5, 'active');
 
 
 INSERT INTO details (task_id, description)

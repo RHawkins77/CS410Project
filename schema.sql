@@ -23,10 +23,10 @@ CREATE TABLE keywords (
 
 CREATE TABLE curr_task(
   curr_task_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  date_created DATE,
   due_date DATE,
   task_id INTEGER,
   status ENUM ('active', 'completed', 'overdue'),
 
   FOREIGN KEY (task_id) REFERENCES task(task_id)
 )
-
