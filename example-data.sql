@@ -19,6 +19,9 @@ INSERT INTO task (task_id, task_label)
 
 INSERT INTO curr_task (curr_task_id, date_created, due_date, task_id, status)
   VALUES (001,'1985-01-01', '1985-01-04', 1, 'completed');
+  
+INSERT INTO curr_task (curr_task_id, date_created, due_date, task_id, status)
+VALUES (002, '2018-01-04', '2018-09-04', 4, 'completed');
 
 INSERT INTO curr_task (curr_task_id, date_created, due_date, task_id, status)
   VALUES (003, '1985-01-04', '1985-04-04', 3, 'completed');
